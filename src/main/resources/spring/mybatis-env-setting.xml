@@ -3,14 +3,6 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
-<!--  
-    如果内网机器报错,请使用下面这种笨办法 
- -->
-<!--   
-<!DOCTYPE configuration  
-        PUBLIC "-//www.mybatis.org//DTD Config 3.0//EN"  
-        "E:/bao/tomcat/apache-tomcat-6.0.14/webapps/pmsys/WEB-INF/classes/mybatis/mybatis-3-config.dtd">  
- -->
 <configuration>
     <properties>
         <!-- 设置分页插件数据库方言 -->
@@ -47,7 +39,6 @@
 
     <plugins>
         <!-- 分页拦截器实现 -->
-        <!--        <plugin interceptor="com.chemcn.ec.framework.PaginationInterceptor"></plugin>-->
         <!-- com.github.pagehelper为PageHelper类所在包名 -->
         <plugin interceptor="com.github.pagehelper.PageHelper">
             <!-- 4.0.0以后版本可以不设置该参数 -->
